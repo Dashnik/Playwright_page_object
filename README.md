@@ -23,3 +23,5 @@ Set up a linter, Prettier, and Husky for consistent code quality and formatting.
 Including reusable patterns directly in this repository.
 
 Implement fixture for BasePage and HomePage
+
+Adding tests into CI/CD
