@@ -15,7 +15,8 @@ export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
-  outputDir: 'reports/test-results',
+  // outputDir: 'reports/test-results',
+  reporter: [['html', { outputFolder: 'reports/test-results', open: 'never' }]],
 
   use: {
     baseURL: 'https://playwright.dev/',
