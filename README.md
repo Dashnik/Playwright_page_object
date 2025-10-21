@@ -1,8 +1,8 @@
-# Page Object Pattern
+# 🧩 Page Object Pattern with Playwright & TypeScript
 
-## Overview
-This project demonstrates the use of the Page Object Model pattern with example spec and page files using TypeScript and Playwright.  
-It provides a foundation for building maintainable and scalable UI tests.
+## 📘 Overview
+This project demonstrates the Page Object Model (POM) design pattern using TypeScript and Playwright.
+It serves as a foundation for building maintainable, scalable, and readable UI test automation frameworks.
 
 ## Getting Started
 To set up this project on your local machine:
@@ -14,8 +14,12 @@ To set up this project on your local machine:
 3. Set up Playwright browsers:
     ```bash
     npx playwright install --with-deps   
-
+4. Launch tests:
+    ```bash
+    npx playwright test  
+   
 ## Future Plans
+
 Adding tests into CI/CD
 
 Set up a linter, Prettier, and Husky for consistent code quality and formatting.
@@ -29,3 +33,7 @@ Including reusable patterns directly in this repository.
 Implement fixture for BasePage and HomePage
 
 
+### Solar System Exploration, 1950s – 1960s
+
+- [x] test
+- [] empty test
