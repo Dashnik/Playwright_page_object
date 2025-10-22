@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+playwright-report
+reports
+test-results/
+*.log
+*.zip
+*.mp4
