@@ -31,7 +31,7 @@ To set up this project on your local machine:
 
 - [x] Integrating tests into GitHub Actions as part of Continuous Integration.
 
-- [ ] Set up a linter, Prettier, and Husky for consistent code quality and formatting.
+- [ ] Set up a Prettier, tsconfig, linter and Husky for consistent code quality and formatting.
 
 - [ ] Add API testing alongside UI tests.
 
