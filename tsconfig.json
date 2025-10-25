@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2021",                 // Modern JS version compatible with Node and Playwright
-    "module": "CommonJS",               // Node.js module system
-    "strict": true,                     // Enable all strict type checks
-    "esModuleInterop": true,            // Allows default imports from CommonJS modules
-    "moduleResolution": "node",         // Resolves modules like Node.js
-    "resolveJsonModule": true,          // Allows importing JSON files
-    "skipLibCheck": true,               // Skips type checking of node_modules
-    "outDir": "./dist",                  // Output folder for compiled JS (not needed for ts-node)
+    "target": "ES2021", // Modern JS version compatible with Node and Playwright
+    "module": "CommonJS", // Node.js module system
+    "strict": true, // Enable all strict type checks
+    "esModuleInterop": true, // Allows default imports from CommonJS modules
+    "moduleResolution": "node", // Resolves modules like Node.js
+    "resolveJsonModule": true, // Allows importing JSON files
+    "skipLibCheck": true, // Skips type checking of node_modules
+    "outDir": "./dist", // Output folder for compiled JS (not needed for ts-node)
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["tests/**/*.ts",
-              "src/**/*.ts"
-  ],         // Include all TS files
-  "exclude": ["node_modules", "./dist"]   // Exclude unnecessary folders
+  "include": ["tests/**/*.ts", "src/**/*.ts"], // Include tests and src TS files
+  "exclude": ["node_modules", "./dist"] // Exclude unnecessary folders
 }
