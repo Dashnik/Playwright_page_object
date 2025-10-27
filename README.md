@@ -31,7 +31,7 @@ To set up this project on your local machine:
 
 - [x] Integrating tests into GitHub Actions as part of Continuous Integration.
 
-- [ ] Set up a Prettier, tsconfig, linter and yarn for consistent code quality and formatting.
+- [x] Set up a Prettier, tsconfig, linter and Husky for consistent code quality and formatting.
 
 - [ ] Add API testing alongside UI tests.
 
@@ -40,3 +40,4 @@ To set up this project on your local machine:
 - [ ] Including reusable patterns directly in this repository such as Page-Factory.
 
 - [ ] Implement fixture for BasePage and HomePage
+- [ ] Adding yarn.lock file to ensure consistent
