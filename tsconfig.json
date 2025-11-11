@@ -8,7 +8,9 @@
     "resolveJsonModule": true, // Allows importing JSON files
     "skipLibCheck": true, // Skips type checking of node_modules
     "outDir": "./dist", // Output folder for compiled JS (not needed for ts-node)
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": ["tests/**/*.ts", "src/**/*.ts"], // Include tests and src TS files
   "exclude": ["node_modules", "./dist"] // Exclude unnecessary folders

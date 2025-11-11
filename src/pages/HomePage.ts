@@ -1,5 +1,6 @@
 import { Page, Locator } from '@playwright/test';
 import { BasePage } from './BasePage';
+import { LogAction } from '../decorators/LogAction';
 
 export class HomePage extends BasePage {
   readonly docsLink: Locator;
@@ -15,11 +16,13 @@ export class HomePage extends BasePage {
     this.searchButton = page.locator('button[title="Search"]');
   }
 
+  @LogAction('Clicking on Docs link')
   async clickDocs() {
     await this.docsLink.click();
   }
 
-  async openHome() {
+    @LogAction('Opening home page')
+    async openHome() {
     await this.open('/');
   }
 }
