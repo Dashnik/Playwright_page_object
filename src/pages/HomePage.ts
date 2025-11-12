@@ -21,8 +21,8 @@ export class HomePage extends BasePage {
     await this.docsLink.click();
   }
 
-    @LogAction('Opening home page')
-    async openHome() {
+  @LogAction('Opening home page')
+  async openHome() {
     await this.open('/');
   }
 }

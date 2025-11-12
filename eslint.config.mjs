@@ -4,4 +4,9 @@ import eslintConfigPrettier from 'eslint-config-prettier/flat';
 export default [
   ...tseslint.configs.recommended, // TypeScript recommended rules
   eslintConfigPrettier,
+  {
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'warn',
+    },
+  },
 ];

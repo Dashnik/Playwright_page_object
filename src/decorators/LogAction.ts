@@ -1,24 +1,21 @@
 export function LogAction(message?: string) {
-    return function (
-        propertyKey: string,
-        descriptor: PropertyDescriptor
-    ) {
-        if (!descriptor || !descriptor.value) {
-            return descriptor;
-        }
+  return function (target: object, propertyKey: string, descriptor: PropertyDescriptor) {
+    if (!descriptor || !descriptor.value) {
+      return descriptor;
+    }
 
-        const originalMethod = descriptor.value;
+    const originalMethod = descriptor.value;
 
-        descriptor.value = async function (...args: any[]) {
-            const logMessage = message || propertyKey;
+    descriptor.value = async function (...args: any[]) {
+      const logMessage = message || propertyKey;
 
-            console.log(`✅ Starting: ${logMessage}`);
-            const result = await originalMethod.apply(this, args);
-            console.log(`✅ Completed: ${logMessage}`);
+      console.log(`✅ Starting: ${logMessage}`);
+      const result = await originalMethod.apply(this, args);
+      console.log(`✅ Completed: ${logMessage}`);
 
-            return result;
-        };
-
-        return descriptor;
+      return result;
     };
+
+    return descriptor;
+  };
 }
