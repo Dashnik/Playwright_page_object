@@ -1,5 +1,5 @@
 import { test as base, expect } from '@playwright/test';
-import { PageFactory } from '../../src/factories/PageFactory';
+import { PageFactory } from '../../src/page-factory/PageFactory';
 
 export type Fixtures = {
   pages: PageFactory;
