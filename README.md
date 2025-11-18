@@ -33,8 +33,8 @@ To set up this project on your local machine:
 
 - [x] Set up a Prettier, tsconfig, linter and Husky for consistent code quality and formatting.
 
-- [ ] Including reusable patterns directly in this repository such as Page-Factory, Decorator.
+- [x] Including reusable patterns directly in this repository such as Page-Factory, Decorator.
+- [x] Implement fixture for BasePage and HomePage
 - [ ] Add API testing alongside UI tests.
 - [ ] Store authentication keys securely in storageState or other locations supported by Playwright.
-- [ ] Implement fixture for BasePage and HomePage
 - [ ] Adding yarn.lock file to ensure consistent
